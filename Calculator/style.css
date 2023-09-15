@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+.intro h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: #2f9fff;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 30px 20px 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+
+.keys {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keys button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+}
+.keys .operatorAC{
+    background-color: rgb(201, 22, 22);
+}
+.keys .operatorEqual{
+    background-color: rgb(43, 182, 69);
+}
+
+.keys button:active {
+  transform: scale(0.99);
+}
+
+.operator {
+  color: #2f9fff;
+}
+.operatorAC,.operatorEqual {
+  color: white;
+}

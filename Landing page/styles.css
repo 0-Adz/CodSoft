@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 300;
+    color: #de376c;
+    padding: 0px 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #de376c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.btn {
+    margin-top:20px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #d73851;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    transform: scale(105%);
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    margin-top: 7%;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+
+
+#featureDestination{
+    padding: 50px 0;
+}
+#featureDestination h2{
+    margin-left: 40%;
+    color: #de376c;
+    font-weight: 500;
+    font-size: 30px;
+}
+.featured-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.destination {
+    
+    flex-basis: calc(27% - 20px);
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 35px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+    margin-left: 21px;
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.destination p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.destination a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #d73851;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.newsletter {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.newsletter button[type="submit"] {
+    flex: 0;
+    background-color: #d73851;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.social-links{
+    margin-top: 30px;
+}
+.social-links a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.7s;
+}
+.social-links a:hover{
+    color: #0a66c2;
+    transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .logo{
+        margin-left: 32px;
+    }
+
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+    nav ul{
+        background: #d73851;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav .fa-regular{
+        position: absolute;
+        top: 30px;
+        left: 35px;
+        cursor: pointer;
+
+    }
+    nav .fa-solid{
+        color: #fff;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        cursor: pointer;
+    }
+    #featureDestination h2{
+        margin-left: 13%;
+        color: #de376c;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .featured-destinations .destination {
+        flex-basis: calc(90% - 20px);
+    }
+    
+    .destination img {
+        margin-left: 0px;
+    }
+    .newsletter h2{
+        font-size: 1.5rem;
+    }
+    .newsletter input[type="email"] {
+        margin-left: 10px;
+    }
+    
+    .newsletter button[type="submit"] {
+        margin-right: 10px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .destination {
+        flex-basis: 100%;
+    }
+}

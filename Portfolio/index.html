@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/708a1a08ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Aadarsh.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div class="intro-text">
+        <p>Full stack developer</p>
+        <h1>Hey there! <br>I am <span>Aadarsh</span> Kumar</h1>
+    </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/profile pic 1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-head">About me</h1>
+                <p>Hello! I'm Aadarsh Kumar, a passionate web developer and coding enthusiast with a deep love for all things digital. My journey in the world of programming began as a fascination and has evolved into a lifelong pursuit of excellence in web development and coding.
+                    <br>I have always been drawn to the endless possibilities that the digital realm offers. My journey into the world of web development began when i was in 5th semester of my college. Since then, I have been on a relentless quest to enhance my skills, stay updated with the latest technologies, and create meaningful digital experiences.</p>
+                <div class="tab-titles">
+                    <p class="tabs active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tabs" onclick="opentab('experience')">Experience</p>
+                    <p class="tabs" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Creating user-centered and visually captivating digital experiences. With expertise in user research, wireframing, prototyping, and accessibility, I bring ideas to life and craft designs that resonate with users.</li>
+                        <li><span>Web Development</span><br>Having passion for crafting responsive and user-friendly websites. Proficient in HTML, CSS, JavaScript, and more, I excel in creating seamless online experiences. Let's bring your web projects to life with clean, efficient, and cutting-edge code.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug 2023 to Sept 2023</span><br>Web development intern at CodSoft</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>10th percentage - 90.25 %<br>Government Boys Senior Secondary School, Shakti Nagar, Delhi, 110007</li>
+                        <li><span>2019</span><br>12th percentage - 84.16 %<br>Rajkiya Pratibha Vikas Vidhyalaya, Raj Niwas Marg, Delhi, 110054</li>
+                        <li><span>2020-2024</span><br>6th Semester GPA - 7.82<br>Studying B.Tech at Delhi Technological University, shahbad Daulatpur Village, Delhi, 110042</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-head">My Services</h1>
+        <div class="services-list">
+            <div>
+
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting responsive websites with cutting-edge web development. Elevate your online presence with our expertise.</p>
+                <a href="#">Know more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <h2>UI/UX Design</h2>
+                <p>Transforming digital experiences through innovative UI/UX design. Let's create user-centric, visually stunning interfaces for your success.</p>
+                <a href="#">Know more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-head">
+            My Work
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/work-2.png">
+                <div class="layer">
+                    <h3>Ecommerce</h3>
+                    <p>Check out my MERN stack eCommerce project – a seamless online shopping experience with powerful features and intuitive design.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-1.png">
+                <div class="layer">
+                    <h3>Feedit</h3>
+                    <p>Explore my HTML, CSS, and JavaScript news website project – a dynamic platform delivering news with a clean and engaging design.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-3.png">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>Discover my portfolio website – a showcase of my skills and projects, beautifully designed using HTML and CSS.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-head">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 1234567891</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aadarsh. Made with love <i class="fa-solid fa-heart" style="color: #f06666;"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tabs");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuicon = document.getElementsByClassName("fa-solid fa-bars");
+    function openmenu(){
+        sidemenu.style.right = "0";
+        menuicon.style.display = "none";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        menuicon.style.display = "block";
+    }
+</script>
+    
+</body>
+</html>

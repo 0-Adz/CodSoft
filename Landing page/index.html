@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wanderAround</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/708a1a08ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <header>
+        <nav>
+            <h1 class="logo">WanderAround</h1>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Breathtaking Destinations</h2>
+        <p>Plan your next adventure to amazing places</p>
+        <a class="btn" href="#">View Destinations</a>
+    </section>
+</div>
+
+<div id="featureDestination">
+    <h2>Featured Destinations</h2>
+    <section class="featured-destinations">
+        <div class="destination">
+            <img src="destination1.jpg" alt="Destination 1">
+            <h3>Ulun Danu Beratan Temple</h3>
+            <p>Explore the beauty of Bali</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="destination">
+            <img src="destination2.jpg" alt="Destination 2">
+            <h3>Penataran Agung Lempuyang Temple</h3>
+            <p>Experience the wonders of Indonesia</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="destination">
+            <img src="destination3.jpg" alt="Destination 3">
+            <h3>Kelingking Beach</h3>
+            <p>Discover the secrets of India</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+</div>
+
+<section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with our latest travel deals and offers</p>
+    <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-logo">
+        <h1 class="logo">WanderAround</h1>
+        <p>Your Travel Website</p>
+    </div>
+    <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+</footer>
+
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuicon = document.getElementsByClassName("fa-solid fa-bars");
+    function openmenu(){
+        sidemenu.style.right = "0";
+        menuicon.style.display = "none";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        menuicon.style.display = "block";
+    }
+</script>
+</html>
